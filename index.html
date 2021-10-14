@@ -60,7 +60,26 @@
                 </div>
             </div>
         </div>
+
+        <div id="form-popup">
+            <div id="form-content">
+                <form id="add-book-form">
+                    <label for="ftitle">Title:</label>
+                    <input type="text",id="ftitle", name="ftitle", placeholder="title">
+                    <label for="fauthor">Author:</label>
+                    <input type="text",id="fauthor", name="fauthor", placeholder="author">
+                    <label for="fpage">Page count:</label>
+                    <input type="number",id="fpage", name="fpage", placeholder="page count">
+                    <label for="fisread">Read:</label>
+                    <input type="checkbox" name="fisread" id="fisread">
+                    <div class="buttons">
+                        <button type="submit", id="add-book-form-button">Add</button>
+                        <div class="cancel-button">Cancel</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="library.js"></script>
     </div>
-    <script src="library.js"></script>
 </body>
 </html>
