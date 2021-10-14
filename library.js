@@ -1,5 +1,7 @@
+//array for holding all the books
 let myLibrary = [];
 
+//book cobject
 function Book(title, author, pages, isread=false) 
 {
     this.title = title;
@@ -8,11 +10,13 @@ function Book(title, author, pages, isread=false)
     this.isread = isread;
 }
 
+//add a book
 function addBookToLibrary(book) 
 {
     myLibrary.push(book)
 }
 
+//remove a book
 function removeBookfromLibrary(book)
 {
     for (let i = 0; i < myLibrary.length; i++) {
@@ -22,3 +26,9 @@ function removeBookfromLibrary(book)
     }
 }
 
+//add a book button
+const addbtn = document.querySelector('#add-book')
+addbtn.addEventListener('click', () =>
+{
+    console.log("test")
+});
