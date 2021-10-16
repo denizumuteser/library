@@ -109,6 +109,12 @@ function populateLibrary()
     }
 }
 
+//if nothing in storage create an empty array
+if (!(getFromStorage("stored_books")))
+{
+    addToStorage("stored_books", [])
+}
+
 populateLibrary()
 
 //clear library
@@ -173,11 +179,7 @@ addform.onsubmit = () => {
     return false;
 };
 
-//if nothing in storage create an empty array
-if (!(getFromStorage("stored_books")))
-{
-    addToStorage("stored_books", [])
-}
+
 
 //DEBUG
 //console.log(localStorage)
