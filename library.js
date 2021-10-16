@@ -1,3 +1,9 @@
+//if nothing in storage create an empty array
+if (!(getFromStorage("stored_books")))
+{
+    addToStorage("stored_books", [])
+}
+
 //book cobject
 function Book(title, author, page, isread=false) 
 {
@@ -107,12 +113,6 @@ function populateLibrary()
 
         container.appendChild(div)
     }
-}
-
-//if nothing in storage create an empty array
-if (!(getFromStorage("stored_books")))
-{
-    addToStorage("stored_books", [])
 }
 
 populateLibrary()
